@@ -138,7 +138,7 @@ def create_json(wav_list, trans_dict, json_file):
         # ADDED
         uttid, _ = os.path.splitext(path_parts[-1])
         # ADDED
-         print(pathlib.Path(__file__).parent)
+        print(pathlib.Path(__file__).parent)
         print(os.path.abspath(os.getcwd()))
         print(os.path.dirname(os.path.abspath(__file__)))
         print(pathlib.Path().resolve())
