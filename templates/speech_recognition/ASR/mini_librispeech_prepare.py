@@ -147,7 +147,7 @@ def create_json(wav_list, trans_dict, json_file):
         # ADDED
         relative_path = os.path.join("{data_root}", *path_parts[-5:])
         # ADDED
-         print(pathlib.Path(__file__).parent)
+        print(pathlib.Path(__file__).parent)
         print(os.path.abspath(os.getcwd()))
         print(os.path.dirname(os.path.abspath(__file__)))
         print(pathlib.Path().resolve())
