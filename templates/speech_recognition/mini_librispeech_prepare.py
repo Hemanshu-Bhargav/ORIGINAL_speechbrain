@@ -122,37 +122,37 @@ def create_json(wav_list, trans_dict, json_file):
 
         # Manipulate path to get relative path and uttid
         # ADDED
-        pathlib.Path(__file__).parent
-        os.path.abspath(os.getcwd())
-        os.path.dirname(os.path.abspath(__file__))
-        pathlib.Path().resolve()
-        pathlib.Path(__file__).parent.resolve()
+        print(pathlib.Path(__file__).parent)
+        print(os.path.abspath(os.getcwd()))
+        print(os.path.dirname(os.path.abspath(__file__)))
+        print(pathlib.Path().resolve())
+        print(pathlib.Path(__file__).parent.resolve())
         # ADDED
         path_parts = wav_file.split(os.path.sep)
         # ADDED
-        pathlib.Path(__file__).parent
-        os.path.abspath(os.getcwd())
-        os.path.dirname(os.path.abspath(__file__))
-        pathlib.Path().resolve()
-        pathlib.Path(__file__).parent.resolve()
+        print(pathlib.Path(__file__).parent)
+        print(os.path.abspath(os.getcwd()))
+        print(os.path.dirname(os.path.abspath(__file__)))
+        print(pathlib.Path().resolve())
+        print(pathlib.Path(__file__).parent.resolve())
         # ADDED
         uttid, _ = os.path.splitext(path_parts[-1])
         # ADDED
-        pathlib.Path(__file__).parent
-        os.path.abspath(os.getcwd())
-        os.path.dirname(os.path.abspath(__file__))
-        pathlib.Path().resolve()
-        pathlib.Path(__file__).parent.resolve()
-        print(*path_parts[-5:])
+         print(pathlib.Path(__file__).parent)
+        print(os.path.abspath(os.getcwd()))
+        print(os.path.dirname(os.path.abspath(__file__)))
+        print(pathlib.Path().resolve())
+        print(pathlib.Path(__file__).parent.resolve())
+        print("Path parts are " + *path_parts[-5:])
         # ADDED
         relative_path = os.path.join("{data_root}", *path_parts[-5:])
         # ADDED
-        pathlib.Path(__file__).parent
-        os.path.abspath(os.getcwd())
-        os.path.dirname(os.path.abspath(__file__))
-        pathlib.Path().resolve()
-        pathlib.Path(__file__).parent.resolve()
-        print(relative_path)
+         print(pathlib.Path(__file__).parent)
+        print(os.path.abspath(os.getcwd()))
+        print(os.path.dirname(os.path.abspath(__file__)))
+        print(pathlib.Path().resolve())
+        print(pathlib.Path(__file__).parent.resolve())
+        print("Relative path is " + relative_path)
         # ADDED
 
         # Create entry for this utterance
