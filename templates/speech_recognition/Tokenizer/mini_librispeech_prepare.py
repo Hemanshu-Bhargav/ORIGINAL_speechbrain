@@ -130,6 +130,9 @@ def create_json(wav_list, trans_dict, json_file):
         # ADDED
         path_parts = wav_file.split(os.path.sep)
         print("Path parts: " + str(path_parts))
+        print("Path parts: " + str(path_parts[-1]))
+        print("Path parts: " + str(path_parts[-5]))
+        print("Path parts: " + str(path_parts[-5:]))
         # ADDED
         print(pathlib.Path(__file__).parent)
         print(os.path.abspath(os.getcwd()))
